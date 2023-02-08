@@ -9,7 +9,6 @@ public class ServerSide {
         Socket socket=listner.accept();
         InputStream input = socket.getInputStream();
         DataInputStream dis = new DataInputStream(input);
-        //DataInputStream input;
         System.out.println(dis.readUTF());
         listner.close();
     }
