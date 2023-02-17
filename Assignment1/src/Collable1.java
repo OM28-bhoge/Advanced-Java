@@ -8,8 +8,8 @@ public class Collable1
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/AdvJava", "root", "root");
             CallableStatement cs = con.prepareCall("{call studentinfo(?,?)}");
-            cs.setInt(1, 5);
-            cs.setString(2,"Pritesh");
+            cs.setInt(1, 10);
+            cs.setString(2,"BhauKadam");
             cs.execute();
             ResultSet rs = cs.executeQuery("select * from student");
             while(rs.next())

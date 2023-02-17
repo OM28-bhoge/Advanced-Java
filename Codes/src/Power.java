@@ -1,5 +1,7 @@
 import java.rmi.*;
 
 public  interface Power extends Remote{
-    public int power1() throws RemoteException;    
+    public int power1() throws RemoteException;
+
+    public char[] Power1();    
 }

@@ -6,7 +6,7 @@ public class MyServer {
         try
         {
             Power stub = new PowerRemote();
-            Naming.rebind ("rmi://localhost:1995/");
+            Naming.rebind ("rmi://localhost:1995/", stub);
         }
         catch(Exception e)
         {

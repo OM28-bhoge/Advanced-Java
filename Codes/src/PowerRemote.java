@@ -8,7 +8,7 @@ public class PowerRemote extends UnicastRemoteObject implements Power{
     }
     public int Power1(int z)
     {
-        int z ;
+        int z;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the base Number :: ");
         int x = sc.nextInt();
