@@ -6,10 +6,10 @@ public class MyClient {
     public static void main(String[] args) {
         try {
             Socket s = new Socket("localhost", 6666);
-       // To make client application to we need to create instance of Socket
+            // To make client application to we need to create instance of Socket
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
             // Allows to give i/p
-// getOutputStream() returns an output stream for writing bytes to this socket.
+            // getOutputStream() returns an output stream for writing bytes to this socket.
             // Trying to give i/p by user using Scanner
             Scanner sc = new Scanner(System.in);
             System.out.println("Please enter the i/p that u want to send to the server");
